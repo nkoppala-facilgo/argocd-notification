@@ -1,0 +1,5 @@
+# filepath: /Users/naveen/Documents/facilgo/facilgo-devops/k8s/tools/argocd/deployments/nginx/values.yaml
+replicaCount: 1
+image:
+  repository: nginx
+  tag: latest
