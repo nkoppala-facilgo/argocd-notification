@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginx
+  namespace: argocd
+  annotations:
+    notifications.argoproj.io/subscribe.on-deployed.slack: error-slack-integration
+    notifications.argoproj.io/subscribe.on-image-version-change.slack: error-slack-integration
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  source:
+    path: nginx
+    repoURL: https://github.com/nkoppala-facilgo/argocd-notification.git
+    targetRevision: HEAD
+  project: default
