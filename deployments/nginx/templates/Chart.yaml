@@ -1,5 +1,0 @@
-# filepath: /Users/naveen/Documents/facilgo/facilgo-devops/k8s/tools/argocd/deployments/nginx/Chart.yaml
-apiVersion: v2
-name: nginx
-description: A minimal Helm chart for testing
-version: 0.1.0
